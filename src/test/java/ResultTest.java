@@ -14,7 +14,7 @@ class ResultTest {
     void roundInputList(){
         List<Integer> list = Arrays.asList(4,73,67,38,33);
         List<Integer> expected = Arrays.asList(75,67,40,33);
-        assertEquals(Result.gradingStudents(list), expected, "Rounding did not work as expected.");
+        assertEquals(expected,Result.gradingStudents(list), "Rounding did not work as expected.");
     }
 
     @Test
